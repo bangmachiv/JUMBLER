@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the position of the element "Apple":</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var ran = 0;
+var op = ["A","B","C","D"];
+var poss = [[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],
+[2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],
+[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]];
+  var a = op[poss[0].indexOf(1)];
+  document.getElementById("demo").innerHTML = a;
+}
+</script>
+
+<p><b>Note:</b> The indexOf method was introduced in JavaScript 1.6, and does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>
